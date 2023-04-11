@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+/* login page */
+.login-wrapper {
+  background-color: #131417;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-wrapper .section-title {
+  font-size: 34px;
+  font-weight: 600;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-wrapper .description {
+  font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-wrapper .form {
+  max-width: 400px;
+}
+.login-wrapper .form-control {
+  height: 50px;
   color: white;
+  background-color: #393939;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.login-wrapper .form-control:focus {
+  color: white;
+  background-color: #393939;
+  box-shadow: none;
+  outline: 1px solid #03C39A;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-wrapper .form-control::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+.login-wrapper .btn-login {
+  height: 50px;
+  padding: 0px 20px;
+  background-size: 200% auto;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  text-align: start;
+  background-image: linear-gradient(to right, #03C39A 0%, #F4D03F  51%, #03C39A  100%);
+  display: flex;
+  justify-content: space-between;
+}
+.login-wrapper .btn-login .text {
+  margin-top: 12px;
+}
+.login-wrapper .btn-login .arrow-icon {
+  width: 25px;
+  height: auto;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.login-wrapper .btn-login:hover .arrow-icon {
+  transform: translateX(5px);
 }
