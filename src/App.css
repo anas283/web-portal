@@ -53,3 +53,13 @@
 .login-wrapper .btn-login:hover .arrow-icon {
   transform: translateX(5px);
 }
+.login-wrapper .text-danger {
+  font-size: 14px;
+}
+
+.border-danger {
+  border: 1px solid red !important;
+}
+.border-danger:focus {
+  outline: none !important;
+}
