@@ -2,13 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Demo link
+## Demo link
 
 https://web-portal-react.vercel.app/
 
-# Authentication credentials for testing
+## Authentication credentials for testing
 
-Username: kminchelle
+Username: kminchelle\
 Password: 0lelplR
 
 ## How to run the project
