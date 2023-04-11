@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import NewsCard from '../components/NewsCard';
+import ProductCard from '../components/ProductCard';
 import ReactPaginate from 'react-paginate';
 import { useNavigate } from 'react-router-dom';
 
@@ -14,13 +14,13 @@ const Dashboard = () => {
   const currentItems = data.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(data.length / itemsPerPage);
 
-  // Get latest news
+  // Get latest products
   const getNews = useCallback(() => {
-    fetch('https://inshorts.deta.dev/news?category=technology')
+    fetch('https://dummyjson.com/products')
       .then(response => response.json())
       .then(json => {
         console.log(json);
-        setData(json.data)
+        setData(json.products)
         setLoading(false);
       })
       .catch(error => console.log(error));
@@ -50,7 +50,7 @@ const Dashboard = () => {
       <div className="col-11 col-lg-10 mx-auto">
 
         <div className="d-flex justify-content-between">
-          <h3>Latest News 📰</h3>
+          <h3>Latest Products</h3>
           <button className="btn btn-light"
             onClick={logout}
           >Logout</button>
@@ -69,7 +69,7 @@ const Dashboard = () => {
             <div className='row mt-3'>
               {currentItems.map((news,key) => {
                 return (
-                  <NewsCard 
+                  <ProductCard 
                     key={key}
                     data={news}
                   />

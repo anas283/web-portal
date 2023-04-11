@@ -88,17 +88,22 @@
   width: 100%;
   object-fit: cover;
 }
-.card-news .date {
+.card-news .description {
   font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: all 0.2s ease-in-out;
 }
 .card-news .title {
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  margin-top: -3px;
   transition: all 0.2s ease-in-out;
 }
 .card-news:hover .title {
