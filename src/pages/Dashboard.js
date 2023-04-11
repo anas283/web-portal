@@ -39,6 +39,12 @@ const Dashboard = () => {
     setItemOffset(newOffset);
   };
 
+  // Remove token and logout
+  const logout = () => {
+    localStorage.removeItem('token');
+    navigate('/');
+  }
+
   return (
     <div className='container vh-100 py-4'>
       <div className="col-11 col-lg-10 mx-auto">
@@ -46,7 +52,7 @@ const Dashboard = () => {
         <div className="d-flex justify-content-between">
           <h3>Latest News 📰</h3>
           <button className="btn btn-light"
-            onClick={() => navigate('/')}
+            onClick={logout}
           >Logout</button>
         </div>
 

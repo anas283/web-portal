@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import RightArrowIcon from '../assets/images/right-arrow.png';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onSubmit = (values) => {
-    console.log(values);
+    localStorage.setItem('token','EXAMPLE_TOKEN')
     navigate('/dashboard');
   }
 
