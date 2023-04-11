@@ -19,7 +19,6 @@ const Dashboard = () => {
     fetch('https://dummyjson.com/products')
       .then(response => response.json())
       .then(json => {
-        console.log(json);
         setData(json.products)
         setLoading(false);
       })
@@ -33,9 +32,6 @@ const Dashboard = () => {
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
 
