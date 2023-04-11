@@ -5,9 +5,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const { handleSubmit, register, formState: { errors } } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = (values) => {
     console.log(values);
+    navigate('/dashboard');
   }
 
   return (

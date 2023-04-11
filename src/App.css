@@ -63,3 +63,56 @@
 .border-danger:focus {
   outline: none !important;
 }
+
+/* art card */
+.card-news {
+  min-height: 280px;
+  max-height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-decoration: none;
+}
+.card-news .image-box {
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.card-news .image-box img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-news .date {
+  font-size: 11px;
+}
+.card-news .title {
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: -3px;
+  transition: all 0.2s ease-in-out;
+}
+.card-news:hover .title {
+  color: #00a883;
+}
+
+.pagination .page-link {
+  color: #00a883;
+}
+.pagination .page-link:hover {
+  color: #00a883;
+}
+.pagination .page-item.active .page-link {
+  color: white;
+  background-color: #00a883 !important;
+  border-color: #00a883;
+}
