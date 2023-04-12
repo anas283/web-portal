@@ -65,7 +65,7 @@
 }
 
 /* art card */
-.card-news {
+.card-product {
   min-height: 280px;
   max-height: 280px;
   border-radius: 10px;
@@ -74,7 +74,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-decoration: none;
 }
-.card-news .image-box {
+.card-product .image-box {
   min-height: 200px;
   max-height: 200px;
   overflow: hidden;
@@ -83,12 +83,12 @@
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
-.card-news .image-box img {
+.card-product .image-box img {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
-.card-news .description {
+.card-product .description {
   font-size: 11px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -97,7 +97,7 @@
   -webkit-box-orient: vertical;
   transition: all 0.2s ease-in-out;
 }
-.card-news .title {
+.card-product .title {
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -106,7 +106,7 @@
   -webkit-box-orient: vertical;
   transition: all 0.2s ease-in-out;
 }
-.card-news:hover .title {
+.card-product:hover .title {
   color: #00a883;
 }
 
